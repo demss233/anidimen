@@ -40,11 +40,4 @@ hamburger.addEventListener("click", () => {
   opened ^= 1;
 });
 
-let inp = document.querySelector(".search");
 
-inp.addEventListener("keydown", (e) => {
-  if (e.keyCode == 9 || e.keyCode == 13) {
-    e.preventDefault();
-    alert("Your searched for a keyword!");
-  }
-});
