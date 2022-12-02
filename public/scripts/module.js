@@ -33,3 +33,13 @@ document.querySelector(".github").addEventListener("click", () => {
 document.querySelector(".navbar svg").addEventListener("click", () => {
   window.location.href = "https://localhost:8000/";
 });
+
+let inp = document.querySelector(".search");
+
+inp.addEventListener("keydown", (e) => {
+  if (e.keyCode == 9 || e.keyCode == 13) {
+    e.preventDefault();
+    let VAL = document.querySelector('.search').value;
+    window.location.href = `/keyword/${VAL}`;
+  }
+});
