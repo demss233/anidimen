@@ -302,8 +302,8 @@
       }
       let genre = url.substr(index + 1);
       //   alert(genre);
-      document.title = genre[0].toUpperCase() + genre.substr(1) + " | Keyword";
-      document.querySelector(".heading").innerText = genre;
+      document.title = genre[0].toUpperCase() + genre.substr(1).split('%20').join(' ') + " | Genre";
+      document.querySelector(".heading").innerText = genre[0].toUpperCase() + genre.substr(1).split('%20').join(' ');
       document.querySelector(".heading").style.textTransform = "capitalize";
 
       fetch(`https://gogoanime.consumet.org/search?keyw=${genre}`)
@@ -329,7 +329,7 @@
         });
       setTimeout(() => {
         document.querySelector(".footer").style.opacity = "1";
-      }, 2000);
+      }, 4000);
     </script>
   </body>
 </html>
