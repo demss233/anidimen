@@ -31,7 +31,7 @@ document.querySelector(".github").addEventListener("click", () => {
 });
 
 document.querySelector(".navbar svg").addEventListener("click", () => {
-  window.location.href = "https://localhost:8000/";
+  window.location.href = "https://anime-ftv.cyclic.app/";
 });
 
 let inp = document.querySelector(".search");
