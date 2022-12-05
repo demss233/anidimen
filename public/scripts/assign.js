@@ -61,10 +61,11 @@ document.querySelector(".navbar-brand svg").addEventListener("click", () => {
 document.querySelector(".go").addEventListener("click", (e) => {
   e.preventDefault();
   let ep = document.querySelector(".episode-value").value;
-  let vidcdn = `https://gogoanime.consumet.org/vidcdn/watch/${animeId}-episode-${ep}`;
-  fetch(vidcdn)
-    .then((response) => response.json())
-    .then((animelist) => {
-      window.open(animelist.Referer);
-    });
+  let vidcdn = `https://animexninja-api.dhvitop1.repl.co/watch/${animeId}/${ep}`
+//   fetch(vidcdn)
+//     .then((response) => response.json())
+//     .then((animelist) => {
+//       window.open(animelist.Referer);
+//     });
+  window.location.href = vidcdn;
 });
