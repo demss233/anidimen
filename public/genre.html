@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="/styles/genre.css" />
+    <link rel="stylesheet" href="/styles/navbar_manual.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .footer {
+        opacity: 0;
+        transition: 0.7s all ease;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar" style="margin-top: 20px">
+      <div class="navbar-left">
+        <div class="navbar-brand">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="50"
+            height="60"
+            viewBox="0,0,256,256"
+            style="fill: #000000"
+          >
+            <g
+              fill="none"
+              fill-rule="nonzero"
+              stroke="none"
+              stroke-width="none"
+              stroke-linecap="none"
+              stroke-linejoin="none"
+              stroke-miterlimit="10"
+              stroke-dasharray=""
+              stroke-dashoffset="0"
+              font-family="none"
+              font-weight="none"
+              font-size="none"
+              text-anchor="none"
+              style="mix-blend-mode: normal"
+            >
+              <g transform="scale(2.56,2.56)">
+                <path
+                  d="M53.5,97.5c-7.225,0 -14.025,-3.188 -18.65,-8.638l-15.71,-0.873c-2.267,-0.125 -4.267,-1.392 -5.351,-3.386c-1.084,-1.989 -1.06,-4.357 0.067,-6.329l0.066,-0.116l0.257,-2.743c-2.657,-0.886 -6.179,-1.113 -6.179,-3.915c0,-2.617 2.181,-5.002 4.523,-7.135c-3.487,-2.732 -3.339,-5.54 -3.601,-5.635c-2.213,-0.587 -6.022,-0.229 -6.657,-2.427c-0.655,-2.285 -0.026,-4.733 1.64,-6.399c4.974,-4.974 10.061,-7.85 16.723,-8.4c-3.903,-5.051 -7.859,-9.62 -7.93,-9.672c-1.906,-1.363 -3.927,-2.737 -3.652,-5.087c0.274,-2.349 1.805,-4.365 3.993,-5.261c5.221,-2.135 10.244,-3.217 14.932,-3.217c3.747,0 6.989,0.667 9.768,1.707c-0.227,-0.864 -0.395,-1.389 -0.416,-1.457c-0.779,-2.338 -0.12,-4.991 1.693,-6.719c1.209,-1.157 2.804,-1.797 4.485,-1.797c0.804,0 1.591,0.147 2.341,0.437c0.6,0.23 11.384,16.586 19.093,21.108c2.13,0.921 4.672,2.317 6.967,4.365c2.61,-1.078 6.088,-1.91 10.6,-1.91c2.638,0 1.759,2.62 2.77,5.056c0.291,0.703 3.687,0.389 3.725,1.119c2.267,0.539 0.152,4.05 0.792,6.364c0.299,1.076 4.284,0.411 4.038,1.45l0.482,0.061c2.518,0.315 4.636,2.083 5.395,4.504c0.762,2.412 0.036,5.074 -1.85,6.774l-4.127,3.714l1.673,1.257c1.714,1.287 2.683,3.331 2.595,5.471c-0.094,2.152 -1.234,4.107 -3.052,5.243l-2.283,1.426c0.476,1.433 0.451,3.017 -0.114,4.447c-0.842,2.123 -2.68,3.621 -4.919,4.014l-14.33,2.529c-4.579,6.265 -11.962,10.07 -19.797,10.07z"
+                  fill="#000000"
+                  stroke="none"
+                  stroke-width="1"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                  opacity="0.35"
+                ></path>
+                <path
+                  d="M51.5,95.5c-7.225,0 -14.025,-3.188 -18.65,-8.638l-15.71,-0.873c-2.267,-0.125 -4.267,-1.392 -5.351,-3.386c-1.084,-1.989 -1.06,-4.357 0.067,-6.329l0.066,-0.116l-1.479,-0.493c-2.657,-0.885 -4.443,-3.363 -4.443,-6.165c0,-2.617 2.181,-5.002 4.523,-7.135c-3.487,-2.732 -5.401,-3.482 -5.663,-3.577c-2.213,-0.587 -3.96,-2.287 -4.595,-4.485c-0.655,-2.285 -0.026,-4.733 1.64,-6.399c4.974,-4.974 10.061,-7.85 16.723,-8.4c-3.903,-5.051 -8.855,-8.679 -8.927,-8.73c-1.906,-1.363 -2.931,-3.678 -2.655,-6.028c0.274,-2.349 1.805,-4.365 3.993,-5.261c5.221,-2.135 10.244,-3.217 14.932,-3.217c3.747,0 6.989,0.667 9.768,1.707c-0.227,-0.864 -0.395,-1.389 -0.416,-1.457c-0.779,-2.338 -0.12,-4.991 1.693,-6.719c1.209,-1.157 2.804,-1.797 4.485,-1.797c0.804,0 1.591,0.147 2.341,0.437c0.6,0.23 14.236,5.634 19.093,21.108c2.13,0.921 4.672,2.317 6.967,4.365c2.61,-1.078 6.088,-1.91 10.6,-1.91c2.638,0 4.994,1.574 6.005,4.011c0.291,0.703 0.452,1.435 0.49,2.165c2.267,0.539 4.13,2.278 4.77,4.592c0.299,1.076 0.306,2.183 0.06,3.223l0.482,0.061c2.518,0.315 4.636,2.083 5.395,4.504c0.762,2.412 0.036,5.074 -1.85,6.774l-4.127,3.714l1.673,1.254c1.714,1.287 2.683,3.331 2.595,5.471c-0.094,2.152 -1.234,4.107 -3.052,5.243l-2.283,1.426c0.476,1.433 0.451,3.017 -0.114,4.447c-0.842,2.123 -2.68,3.621 -4.919,4.014l-14.33,2.529c-4.579,6.265 -11.962,10.07 -19.797,10.07z"
+                  fill="#f2f2f2"
+                  stroke="none"
+                  stroke-width="1"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                ></path>
+                <path
+                  d="M81.5,61.5l10,-9l-16,-2l10,-6h-11l6,-6c-9,0 -12,4 -12,4c-3,-6 -11,-8 -11,-8c-3,-15 -16,-20 -16,-20c0,0 3,9 2,18c0,0 -8,-16 -30,-7c0,0 14,10 16,22c0,0 -12,-6 -23,5c0,0 4,1 14,11c0,0 -8,3 -8,6l9,3l-4,7l18,1l0.718,-0.022c3.175,5.109 8.823,8.522 15.282,8.522c6.864,0 12.828,-3.844 15.864,-9.496l0.136,-0.004l17,-3l-3,-4l8,-5z"
+                  fill="#707cc0"
+                  stroke="none"
+                  stroke-width="1"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                ></path>
+                <path
+                  d="M42.5,49.5c0,0 0,7 2,12c0,0 5.5,-7.5 13.5,-11.5l-2,12c0,0 4,-2 10,-7l-0.393,13.303c0,0 5.326,-4.303 10.393,-4.303c3,0 2,13 -9,14l-3,7l-11.775,4.202l-7.225,-2.202l-8.782,-6.522l0.586,-1.388c-10.366,-0.304 -13.804,-15.09 -9.804,-15.09c4,0 10.225,3.764 10.225,3.764c0,0 -4.225,-12.764 5.275,-18.264z"
+                  fill="#ffe8d9"
+                  stroke="none"
+                  stroke-width="1"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                ></path>
+                <path
+                  d="M36.348,62.847l11.326,6.973c0,0 -0.303,4.719 -4.989,4.517c-6.129,-0.265 -6.337,-11.49 -6.337,-11.49z"
+                  fill="#ffffff"
+                  stroke="none"
+                  stroke-width="1"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                ></path>
+                <path
+                  d="M36.854,62.253l11.224,6.472"
+                  fill="none"
+                  stroke="#40396e"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="miter"
+                ></path>
+                <ellipse
+                  cx="43.5"
+                  cy="69.5"
+                  rx="1.5"
+                  ry="2.5"
+                  fill="#40396e"
+                  stroke="none"
+                  stroke-width="1"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                ></ellipse>
+                <path
+                  d="M65.651,62.847l-11.325,6.973c0,0 0.303,4.719 4.989,4.517c6.129,-0.265 6.336,-11.49 6.336,-11.49z"
+                  fill="#ffffff"
+                  stroke="none"
+                  stroke-width="1"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                ></path>
+                <path
+                  d="M65.146,62.253l-11.225,6.472"
+                  fill="none"
+                  stroke="#40396e"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="miter"
+                ></path>
+                <ellipse
+                  cx="58.5"
+                  cy="69.5"
+                  rx="1.5"
+                  ry="2.5"
+                  fill="#40396e"
+                  stroke="none"
+                  stroke-width="1"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                ></ellipse>
+                <path
+                  d="M54.328,79.328c-0.724,0.724 -1.724,1.172 -2.828,1.172c-1.105,0 -2.105,-0.448 -2.828,-1.172"
+                  fill="none"
+                  stroke="#40396e"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="miter"
+                ></path>
+                <g
+                  fill="#d47f56"
+                  stroke="none"
+                  stroke-width="1"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                  opacity="0.35"
+                >
+                  <path
+                    d="M76,64c-1.802,0 -3.632,0.547 -5.248,1.249c-0.369,5.972 -4.892,13.841 -4.892,13.841l0.711,-0.088l0.429,-1.002c11,-1 12,-14 9,-14z"
+                  ></path>
+                  <path
+                    d="M27,64c-3.738,0 -0.978,12.91 7.858,14.849l1.945,0.241c0,0 -4.569,-7.948 -4.897,-13.931c-1.656,-0.647 -3.432,-1.159 -4.906,-1.159z"
+                  ></path>
+                </g>
+                <path
+                  d="M81.5,61.5l10,-9l-16,-2l10,-6h-11l6,-6c-9,0 -12,4 -12,4c-3,-6 -11,-8 -11,-8c-3,-15 -16,-20 -16,-20c0,0 3,9 2,18c0,0 -8,-16 -30,-7c0,0 14,10 16,22c0,0 -12,-6 -23,5c0,0 4,1 14,11c0,0 -8,3 -8,6l9,3l-4,7l18,1l0.718,-0.022c3.175,5.109 8.823,8.522 15.282,8.522c6.864,0 12.828,-3.844 15.864,-9.496l0.136,-0.004l17,-3l-3,-4l8,-5z"
+                  fill="none"
+                  stroke="#40396e"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div class="navbar-left-links">
+          <a href="https://github.com/demss233/anime-ftv" class="git">Github</a>
+          <a href="https://gogoanime.consumet.org/" class="api">Gogoanime</a>
+          <div class="dropdown">
+            <button class="dropbtn">Genres</button>
+            <div class="dropdown-content">
+              <a href="/genre/romance">Romance</a>
+              <a href="/genre/comedy">Comedy</a>
+              <a href="/genre/horror">Horror</a>
+              <a href="/genre/shounen">Shounen</a>
+              <a href="/genre/sci-fi">Sci-fi</a>
+              <a href="/genre/action">Action</a>
+              <a href="/genre/adventure">Adventure</a>
+              <a href="/genre">More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar-right">
+        <div class="form-control-not-bootstrap">
+          <input
+            type="text"
+            class="search"
+            placeholder="&#xF002; Search"
+            style="font-family: Arial, FontAwesome"
+          />
+        </div>
+        <div class="contact-btn">
+          <button>CONTACT</button>
+        </div>
+      </div>
+      <div class="hamburger">
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+        <div class="line line3"></div>
+      </div>
+    </nav>
+    <div class="wrapper">
+      <h2 class="heading"></h2>
+      <div class="cards"></div>
+    </div>
+
+    <button
+      class="show_more"
+      style="
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: fit-content;
+        opacity: 0;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        padding: 12px 20px;
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.2);
+        color: silver;
+        border: 1px solid silver;
+      "
+    >
+      More
+    </button>
+
+    <div
+      class="footer"
+      style="
+        margin-top: 130px;
+        width: 100%;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background-color: #121926;
+        padding: 30px 10px;
+        text-align: center;
+      "
+    >
+      <div class="footer-container">
+        <div class="introduction">
+          MADE BY AN OTAKU
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="pink"
+            class="bi bi-person-workspace"
+            viewBox="0 0 16 16"
+            style="margin: 0px 5px"
+          >
+            <path
+              d="M4 16s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H4Zm4-5.95a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"
+            />
+            <path
+              d="M2 1a2 2 0 0 0-2 2v9.5A1.5 1.5 0 0 0 1.5 14h.653a5.373 5.373 0 0 1 1.066-2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v9h-2.219c.554.654.89 1.373 1.066 2h.653a1.5 1.5 0 0 0 1.5-1.5V3a2 2 0 0 0-2-2H2Z"
+            />
+          </svg>
+          FOR OTAKUS
+        </div>
+        <div
+          class="footer-links"
+          style="display: flex; justify-content: center; margin-top: 10px"
+        >
+          <div class="github">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-github"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+              />
+            </svg>
+          </div>
+          <div class="quora">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-quora"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8.73 12.476c-.554-1.091-1.204-2.193-2.473-2.193-.242 0-.484.04-.707.142l-.43-.863c.525-.45 1.373-.808 2.464-.808 1.697 0 2.568.818 3.26 1.86.41-.89.605-2.093.605-3.584 0-3.724-1.165-5.636-3.885-5.636-2.68 0-3.839 1.912-3.839 5.636 0 3.704 1.159 5.596 3.84 5.596.425 0 .811-.046 1.166-.15Zm.665 1.3a7.127 7.127 0 0 1-1.83.244C3.994 14.02.5 11.172.5 7.03.5 2.849 3.995 0 7.564 0c3.63 0 7.09 2.828 7.09 7.03 0 2.337-1.09 4.236-2.675 5.464.512.767 1.04 1.277 1.773 1.277.802 0 1.125-.62 1.179-1.105h1.043c.061.647-.262 3.334-3.178 3.334-1.767 0-2.7-1.024-3.4-2.224Z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="name" style="margin-top: 10px">SHIV SATYAM</div>
+      </div>
+    </div>
+    <script src="/scripts/module.js"></script>
+    <script>
+      let inp2 = document.querySelector(".search");
+      let hamburger = document.querySelector(".hamburger");
+
+      let opened = 0;
+
+      hamburger.addEventListener("click", () => {
+        if (opened) {
+          document.querySelector(".navbar").style.flexDirection = "row";
+          document.querySelector(".navbar").style.alignItems = "center";
+          document.querySelector(".navbar").style.justifyContent =
+            "space-between";
+          document.querySelector(".navbar-left-links").style.display = "none";
+          document.querySelector(".navbar-right").style.display = "none";
+          document.querySelector(".line2").style.display = "block";
+          document.querySelector(".line1").style.transform = "rotate(0deg)";
+          document.querySelector(".line3").style.transform = "rotate(0deg)";
+          document.querySelector(".line3").style.marginTop = "5px";
+          hamburger.style.margin = "0";
+        } else {
+          document.querySelector(".navbar").style.flexDirection = "column";
+          document.querySelector(".navbar").style.alignItems = "center";
+          document.querySelector(".navbar-left-links").style.display = "flex";
+          document.querySelector(".navbar-left-links").style.flexDirection =
+            "column";
+          document.querySelector(".navbar-left-links").style.marginLeft =
+            "auto";
+          document.querySelector(".navbar-left-links").style.marginRight =
+            "auto";
+
+          document.querySelector(".navbar a").style.marginTop = "20px";
+
+          document.querySelector(".navbar-right").style.display = "flex";
+          document.querySelector(".navbar-right").style.marginTop = "20px";
+          document.querySelector(".navbar-right").style.flexDirection =
+            "column";
+
+          hamburger.style.marginTop = "20px";
+          hamburger.style.marginBottom = "60px";
+          document.querySelector(".line2").style.display = "none";
+          document.querySelector(".line3").style.margin = "0px";
+          document.querySelector(".line1").style.transform = "rotate(45deg)";
+          document.querySelector(".line3").style.transform = "rotate(-46deg)";
+
+          hamburger.style.padding = "13px 15px";
+        }
+        opened ^= 1;
+      });
+      inp2.addEventListener("keydown", (e) => {
+        if (e.keyCode == 9 || e.keyCode == 13) {
+          e.preventDefault();
+          let VAL = document.querySelector(".search").value;
+          window.location.href = `/keyword/${VAL}`;
+        }
+      });
+      let url = window.location.href;
+      // alert(url);
+      let index = 0;
+      for (let i = 0; i < url.length; ++i) {
+        if (url.substr(i, 5) == "genre") {
+          index = i + 5;
+          break;
+        }
+      }
+      let genre = url.substr(index + 1);
+      fetch(`https://gogoanime.consumet.org/genre/${genre}`)
+        .then((response) => response.json())
+        .then((animelist) => {
+          console.log(animelist.length);
+          for (let i = 0; i < animelist.length; ++i) {
+            let container = document.createElement("div");
+            container.classList.add("card-img");
+            let img = document.createElement("img");
+            img.src = animelist[i].animeImg;
+            let div_ = document.createElement("div");
+            div_.innerText = animelist[i].animeTitle;
+            div_.classList.add("overlay");
+            container.appendChild(img);
+            container.appendChild(div_);
+            document.querySelector(".cards").appendChild(container);
+
+            container.addEventListener("click", () => {
+              window.location.href = `/${animelist[i].animeId}`;
+            });
+          }
+        });
+
+      let current_counter = 2;
+      document.querySelector(".show_more").addEventListener("click", () => {
+        current_counter += 1;
+        console.log("clicked");
+        fetch(
+          `https://gogoanime.consumet.org/genre/${genre}?page=${current_counter}`
+        )
+          .then((response) => response.json())
+          .then((animelist) => {
+            console.log(animelist.length);
+            for (let i = 0; i < animelist.length; ++i) {
+              let container = document.createElement("div");
+              container.classList.add("card-img");
+              let img = document.createElement("img");
+              img.src = animelist[i].animeImg;
+              let div_ = document.createElement("div");
+              div_.innerText = animelist[i].animeTitle;
+              div_.classList.add("overlay");
+              container.appendChild(img);
+              container.appendChild(div_);
+              document.querySelector(".cards").appendChild(container);
+
+              container.addEventListener("click", () => {
+                window.location.href = `/${animelist[i].animeId}`;
+              });
+            }
+          });
+      });
+      //   alert(genre);
+      document.title =
+        genre[0].toUpperCase() +
+        genre.substr(1).split("%20").join(" ") +
+        " | Genre";
+      document.querySelector(".heading").innerText =
+        genre[0].toUpperCase() + genre.substr(1).split("%20").join(" ");
+      document.querySelector(".heading").style.textTransform = "capitalize";
+      setTimeout(() => {
+        document.querySelector(".footer").style.opacity = "1";
+        document.querySelector(".show_more").style.opacity = "1";
+      }, 3000);
+    </script>
+  </body>
+</html>
